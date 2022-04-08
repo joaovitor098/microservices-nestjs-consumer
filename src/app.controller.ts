@@ -8,6 +8,6 @@ export class AppController {
 
   @EventPattern('storage-test')
   getStorage(@Payload() message: string) {
-    console.log('Message Received', message);
+    this.appService.printMenssage(message);
   }
 }
